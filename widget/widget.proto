@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option go_package = "";
+
+package widget;
+
+// receives request to update/add widgets to storage
+// and returns a response
+service Process {
+  rpc Update (UpdateRequest) returns (UpdateResponse);
+}
+
+// The update request
+message UpdateRequest {
+  string name = 1;
+  int64 quantity = 2;
+}
+
+// the update response
+message UpdateResponse {
+  string message = 1;
+}
