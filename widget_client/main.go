@@ -16,7 +16,6 @@ const (
 )
 
 // Code for the rest endpoint to send request to the storage service
-// Alternately all the code could be in a monolithic package
 // 1. Unmarshall to protobuf
 // 2. Send request
 // 3. Marshall response
